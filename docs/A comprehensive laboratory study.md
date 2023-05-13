@@ -1,6 +1,6 @@
-#  on the immersion freezing behavior of illite NX particles: a comparison of 17 ice nucleation measurement techniques
+##  on the immersion freezing behavior of illite NX particles: a comparison of 17 ice nucleation measurement techniques
 
-# Reference 
+## Reference 
 @article{hiranuma2015comprehensive,
   title={A comprehensive laboratory study on the immersion freezing behavior of illite NX particles: a comparison of 17 ice nucleation measurement techniques},
   author={Hiranuma, Naruki and Augustin-Bauditz, Stefanie and Bingemer, Heinz and Budke, Carsten and Curtius, Joachim and Danielczok, Anja and Diehl, Karoline and Dreischmeier, Katharina and Ebert, Martin and Frank, Fabian and others},
@@ -12,7 +12,7 @@
   publisher={Copernicus GmbH}
 }
 
-# Abstract
+## Abstract
 
 There is challenge in understanding how ice nucelation results are potentially influenced or biased by experimental parameters associated wiht different techniques
 
@@ -38,7 +38,7 @@ id3 --> id5(* Temperature)
 
 * Measurement techniques have proven change the IN activity and the temperature at which nucleates. For instance, **wet techniques** have shown to **promote** nucleation at **higher temperatures** 
 
-# 4.2 Limitations of instrument types
+## 4.2 Limitations of instrument types
 
 Possible systematic uncertainties in the estimation of $n_s$ ( #limitations, #instruments)
 * Particle generation

@@ -13,7 +13,7 @@ Ullrich, R., and Coauthors, 2017: A New Ice Nucleation Active Site Parameterizat
 
 * Comparison with a **CNT-based** ( #CNT) empirical parameterization and an empirical framework showed ==large differences== in shape and magnitude of the $n_s$ isolines especially for **deposition nucleation**
 
-## Introduction
+# Introduction
 
 Inas density ( #inas) for a polydisperse aerosol sample is given by:
 $$
@@ -31,7 +31,7 @@ Where $n_i(T,s_i)$ is the number of frozen droplets at temperature $T$ and super
 - Large particles were removed
 - most of the samples passed a cyclone impactor with a cutoff value between 1 and 5 $\mu m$ to further remove larger particles
 
-## Results
+# Results
 
 The inas density values derived from the measurements for ==immersion freezing on desert dust== can be approximated by an **exponential function**
 $$
@@ -42,7 +42,7 @@ where $T\epsilon[243 , 459]$
 * Nevertheless, the scaled parameterization  for illite NX does agree very well with the parameterization for desert dust. Therefore, illite seems to be a good proxy for ice nucleation of desert dus
 ![[Ulrrich_paper_parameterization_comparison.png]]
 
-## Some technical aspects
+# Some technical aspects
 * This ice nucleation time interval is further split into  smaller time bins for the analysis. To obtain representative statistics, each bin k is required to have a minimum length of 10 s and to include at least five ice particle   counts. For each bin, the ice number concentration n i,k, the  mean temperature Tk, and the mean ice saturation ratio  $S_{i,k} = RH_{i,k}/100\%$  are determined
 * The total aerosol number and  ==surface area concentrations== are obtained from a lognormal  
 fit to the size distribution
@@ -64,7 +64,7 @@ $\Phi(x)$ is the standar normal distribution with the cutoff  value x, $d_{m,s}$
 
 One of the new things that this study implemented was the consideration of the surface area variation with time and pumping as it was explained in the previous section. Nevertheless, they used samples from old experiments that were analyzed and fitted before. In the case of mineral dust, the previous fit has a small difference with this one on the amount of predicted ice crystals. 
 
-## Appendix
+# Appendix
 
 ### Reduction due to incomplete CCN activation
 For some immersion freezing experiment in the AIDA cloud chamber not all aerosol is activated to droplets. Therefore, the total aerosol surface area concentration available for freezing is not equal to the total concentration obtained from the lognormal distribution function.
