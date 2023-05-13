@@ -15,11 +15,10 @@ Ullrich, R., and Coauthors, 2017: A New Ice Nucleation Active Site Parameterizat
 
 ## Introduction
 
-Inas density ( #inas) for a polydisperse aerosol sample is given by
+Inas density ( #inas) for a polydisperse aerosol sample is given by:
 $$
 \sum_{j=1}^{p}N_{i,j} = \sum_{j=1}^{p}N_{tot,j}(1-e^{-S_{ae,j}n_s(T)})
 $$
-
 ## Data and Methods
 
 Assuming that $S_{ae,j}n_s << 1$ :
