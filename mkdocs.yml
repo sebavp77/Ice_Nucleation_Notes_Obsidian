@@ -1,6 +1,6 @@
 site_name: Ice Nucleation Notes 
 site_description: Ice nucleation notes with focus on mineral dust.
-site_url: https://sebavp77.io/Ice_Nucleation_Notes_Obsidian # Change this to your site URL
+site_url: https://sebavp77.github.io/Ice_Nucleation_Notes_Obsidian/ # Change this to your site URL
 
 theme:
     name: 'material'
