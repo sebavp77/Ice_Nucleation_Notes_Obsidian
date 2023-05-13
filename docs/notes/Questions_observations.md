@@ -1,0 +1,8 @@
++ How the milling process of our samples affected the #particle_size and #surface_area . As it is mentioned in [[Comparing the ice nucleation properties of the kaolin..#Milling]]
++ Analyzing the dependence of heterogenous ice nucleation with #particle_size  some assumptions have to be made, as for example: **arosol composition and surface properties do not vary with particle size** 
++ Structure abstracts in sentences with the following topic: objective, methods, results, and conclusions
++ #homogeneous_ice nucleation is **droplet volume dependent**, because the formation of a critical ice cluster inducing freezing of the droplet depends on #kinetic effects and #ater_molecule availability
++ To our knowledge, so far no measurements exist that quantify both the droplet volume and particle surface area dependence very thoroughly.
++ In the paper "Immersion Freezing of Kaolinite Scaling with" they suggested that $n_s$ ( #inas density) is independent of #particle_size (when there are particles with the same charge)
++ The comparison of ns values helps to study the comparability of different instruments and the impact of time on the immersion freezing ability
++ For **immersion freezing** ( #immersion_freezing ), only the aerosol  activated to droplets will contribute to ice formation. If the **CCN activated fraction is less than 50% the total aerosol surface area concentration is reduced to this fraction** (Ullrich paper)

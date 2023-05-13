@@ -1,0 +1,479 @@
+{
+  "main": {
+    "id": "1a769374599c8882",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0859216d5e4a113",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "392993d1cce8295d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A comprehensive laboratory study.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af19c45695302f4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A Particle-Surface-Area-Based Parameterization of Immersion ....md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e80dcdd79a16a324",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Miscellaneous.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef9eb3756d37ed77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ice Nucleation by Particles....md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5a581e72c49d4ac9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Parameterizing the competition between homogeneous ....md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fa9e581cf4e9d673",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Parameterizing the competition between homogeneous and heterogeneous freezing in cirrus cloud formation  monodisperse ice nuclei.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b44dec0eab7505d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Immersion Freezing of Kaolinite Scaling with.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9917c04a7f58ef0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comparing the ice nucleation properties of the kaolin...md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fb7ab8c6aafa48d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A comprehensive laboratory study.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f76e9e6e33a9474e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Influence of particle size and shape on the backscattering ....md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8521178d55a99a26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Miscellaneous.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be55e7043aacde5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Heterogeneous ice nucleation ....md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a96b79ad16ccd069",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A Particle-Surface-Area-Based Parameterization of Immersion ....md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b246e0989514cf72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A New Ice Nucleation Active Site Parameterization for Desert Dust and Soot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "824b4c45c6d8cf85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A New Ice Nucleation Active Site Parameterization for Desert Dust and Soot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fdaa6c39fad997f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Main.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9c437e7a4b7a8b1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AIDA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "80f3280056b160ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Definitions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4324fa46593e9e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "papers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f29d9ad3ea22ee01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Miscellaneous.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f4c44fff7cf6682d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comparing the ice nucleation properties of the kaolin...md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d393733306ea82af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comparing the ice nucleation properties of the kaolin...md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1d993976681236a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "25bd29b2879732f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8e6e2b69a8e0f16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a94411170d853e42",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "78242d912cad1b9c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e03ff0f5675eb2d8",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "e3d4275734646bea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0f200141f6b452ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd26e3a5fb1cfa06",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4bc0fe56d48ec4e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "A Particle-Surface-Area-Based Parameterization of Immersion ....md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fcdc597e205e0695",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "A Particle-Surface-Area-Based Parameterization of Immersion ....md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "34406271f0a1ad5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3b9d20884cd6b18b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "A Particle-Surface-Area-Based Parameterization of Immersion ....md"
+              }
+            }
+          },
+          {
+            "id": "1d9819b88ea0b65c",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "publish:Publish changes...": false,
+      "webpage-html-export:Export Vault to HTML": false
+    }
+  },
+  "active": "af19c45695302f4b",
+  "lastOpenFiles": [
+    "A comprehensive laboratory study.md",
+    "A New Ice Nucleation Active Site Parameterization for Desert Dust and Soot.md",
+    "A Particle-Surface-Area-Based Parameterization of Immersion ....md",
+    "AIDA.md",
+    "Cloud Formation.md",
+    "Comparing the ice nucleation properties of the kaolin...md",
+    "Definitions.md",
+    "Dominant role of mineral dust ....md",
+    "Heterogeneous ice nucleation ....md",
+    "Ice Nucleation by Particles....md",
+    "Ice nucleation imaged with X-ray spectro-microscopy.md",
+    "Ice_Nucleation_Notes-main/docs/A comprehensive laboratory study.md",
+    "Ice_Nucleation_Notes-main/docs/A New Ice Nucleation Active Site Parameterization for Desert Dust and Soot.md",
+    "Ice_Nucleation_Notes-main/docs/A Particle-Surface-Area-Based Parameterization of Immersion ....md",
+    "Ice_Nucleation_Notes-main/docs/AIDA.md",
+    "Ice_Nucleation_Notes-main/docs/Cloud Formation.md",
+    "Ice_Nucleation_Notes-main/docs/Comparing the ice nucleation properties of the kaolin...md",
+    "Ice_Nucleation_Notes-main/docs/Definitions.md",
+    "Ice_Nucleation_Notes-main/docs/Dominant role of mineral dust ....md",
+    "Ice_Nucleation_Notes-main/docs/Features/LaTeX Math Support.md",
+    "Ice_Nucleation_Notes-main/docs/Features/Mermaid Diagrams.md",
+    "Ice_Nucleation_Notes-main/docs/Features/Text Formatting.md",
+    "Ice_Nucleation_Notes-main/docs/Heterogeneous ice nucleation ....md",
+    "Ice_Nucleation_Notes-main/docs/Ice Nucleation by Particles....md",
+    "Ice_Nucleation_Notes-main/docs/Ice nucleation imaged with X-ray spectro-microscopy.md",
+    "Ice_Nucleation_Notes-main/docs/Immersion Freezing of Kaolinite Scaling with.md",
+    "cloud_formation/workflow_Ullrich_normalization.png",
+    "cloud_formation/Ulrrich_paper_parameterization_comparison.png",
+    "cloud_formation/Synthetic_aerosol_distribution_in_number_area_and_volume_space.png",
+    "cloud_formation/surface_area_Ullrich_paper_variable_mean_std.png",
+    "cloud_formation/surface_area_Ullrich_paper.png",
+    "cloud_formation/surface_area_distribution_evolution.png",
+    "cloud_formation/surface_area_distribution_evolution.pdf",
+    "cloud_formation/soccer_model_eachparticle.png",
+    "cloud_formation/soccer_ball_model_illustration.png",
+    "cloud_formation/soccer_ball_model.png",
+    "cloud_formation/phase_diagram_clausius_clapeyron.png",
+    "cloud_formation",
+    "Ice_Nucleation_Notes-main/docs/workflow_ullrich_parameterization.docx",
+    "Ice_Nucleation_Notes-main/docs/surface_distribution_Ullrich_paper_V2.py",
+    "Ice_Nucleation_Notes-main/docs/surface_distribution_Ullrich_paper.py",
+    "Ice_Nucleation_Notes-main/docs/cloud_formation/surface_area_distribution_evolution.pdf",
+    "Ice_Nucleation_Notes-main/docs/cloud_formation",
+    "Ice_Nucleation_Notes-main/cloud_formation/surface_area_distribution_evolution.pdf",
+    "Ice_Nucleation_Notes-main/cloud_formation",
+    "Ice_Nucleation_Notes-main/docs/javascripts/mathjax.js",
+    "Untitled.canvas"
+  ]
+}

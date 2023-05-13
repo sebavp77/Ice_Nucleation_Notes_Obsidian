@@ -1,0 +1,13 @@
+{
+  "obsidian-mkdocs-publisher:publisher-publish-all": [],
+  "obsidian-mkdocs-publisher:publisher-upload-new": [],
+  "obsidian-mkdocs-publisher:publisher-upload-all-edited-new": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ]
+}
