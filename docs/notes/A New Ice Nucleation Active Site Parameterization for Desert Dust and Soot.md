@@ -16,16 +16,13 @@ Ullrich, R., and Coauthors, 2017: A New Ice Nucleation Active Site Parameterizat
 # Introduction
 
 Inas density ( #inas) for a polydisperse aerosol sample is given by:
-$$
-\sum_{j=1}^{p}N_{i,j} = \sum_{j=1}^{p}N_{tot,j}(1-e^{-S_{ae,j}n_s(T)})
-$$
+$$\sum_{j=1}^{p}N_{i,j} = \sum_{j=1}^{p}N_{tot,j}(1-e^{-S_{ae,j}n_s(T)})$$
+
 ## Data and Methods
 
 Assuming that $S_{ae,j}n_s << 1$ :
-$$
-n_s(T,s_i) \approx \frac{n_i(T,s_i)}{n_{ae,tot}S_{ae}} = \frac{n_i(T,s_i)}{s_{ae}}
-$$
-Where $n_i(T,s_i)$ is the number of frozen droplets at temperature $T$ and super saturation with respect to ice $S_i$, $n_{ae,tot}(T,s_i)$ is the total number of particles, $S_{ae}$ is the aerosol surface are per particle, and $s_{ae}$ is the total aerosol surface area of all particles
+$$n_s(T,s_i) \approx \frac{n_i(T,s_i)}{n_{ae,tot}S_{ae}} = \frac{n_i(T,s_i)}{s_{ae}}$$
+Where $n_i(T,s_i)$ is the number of frozen droplets at temperature $T$ and super saturation with respect to ice $S_i$, $n_{ae,tot}(T,s_i)$ is the total number of particles, $S_{ae}$ is the aerosol surface area per particle, and $s_{ae}$ is the total aerosol surface area of all particles
 
 - ==Relative error for the inas density of about 40%==
 - Large particles were removed
@@ -34,9 +31,7 @@ Where $n_i(T,s_i)$ is the number of frozen droplets at temperature $T$ and super
 # Results
 
 The inas density values derived from the measurements for ==immersion freezing on desert dust== can be approximated by an **exponential function**
-$$
-n_s(T,desert dust) = e^{150.577 - 0,517T}
-$$
+$$n_s(T,desert dust) = e^{150.577 - 0,517T}$$
 where $T\epsilon[243 , 459]$
 
 * Nevertheless, the scaled parameterization  for illite NX does agree very well with the parameterization for desert dust. Therefore, illite seems to be a good proxy for ice nucleation of desert dus
@@ -52,7 +47,7 @@ Therefore, the total number and surface area concentrations as measured prior to
 
 #### How to obtain the total surface area for each time bin K taking into account the dilution effect
 
-**The aerosol surface area concentration** $s_{ae,k}$ in each time bin $k$ is the fraction of the total   aerosol surface area concentration $s_{ae,0}$ , which, until this time, was activated to ice crystals. ==This fraction is obtained by== integrating the lognormal distribution from a threshold particle diameter $d_{act,k-1}$ to infinity and corrected for the dilution effec
+**The aerosol surface area concentration** $s_{ae,k}$ in each time bin $k$ is the fraction of the total   aerosol surface area concentration $s_{ae,0}$ , which, until this time, was activated to ice crystals. ==This fraction is obtained by== integrating the lognormal distribution from a threshold particle diameter $d_{act,k-1}$ to infinity and corrected for the dilution effect
 
 $$
 s_{ae,k} = s_{ae,0}\frac{P_k}{P_0}\Phi(\frac{logd_{act,k-1} - logd_{m,s}}{log\sigma_{g,s}})
@@ -69,31 +64,21 @@ One of the new things that this study implemented was the consideration of the s
 ### Reduction due to incomplete CCN activation
 For some immersion freezing experiment in the AIDA cloud chamber not all aerosol is activated to droplets. Therefore, the total aerosol surface area concentration available for freezing is not equal to the total concentration obtained from the lognormal distribution function.
 So, only certain particle diameter are now *CCN*, we can define the fraction of activated particles as:
-$$
-f_d = \frac{S_{ae}}{S_{ae,0}} \tag{1}
-$$
+$$f_d = \frac{S_{ae}}{S_{ae,0}} \tag{1}$$
 Where $S_{ae}$ is the total surface area of all particles that activated to CCN and $S_{ae,0}$ is the total surface area of particles available for activation. Total activation will imply $S_{ae}=S_{ae,0}=1$
 
 **In the following part I am going to derive the equations presented in ==Appendix c==**
 
 Now, knowing that the particle number concentration follows a *==lognormal distribution==* we can obtain the total surface area concentration for the particles that activated to *CCN*. Parting from the lognormal distribution
-$$
-n(l) = \frac{dN(l)}{dl}=\frac{N_0}{ \sigma \sqrt{2\pi}}e^{-\frac{1}{2}(\frac{l - \mu}{\sigma})^2} \tag{2}
-$$
+$$n(l) = \frac{dN(l)}{dl}=\frac{N_0}{ \sigma \sqrt{2\pi}}e^{-\frac{1}{2}(\frac{l - \mu}{\sigma})^2} \tag{2}$$
 
-with $l=ln(x)$, in this case x is either the radius or diameter, $\sigma$ and $\mu$ are the variance and mean of the particle number concentration distribution. If we want to express Equation 2 as function of diamter, consider that:
-$$
-n(d) = \frac{dN(l)}{dl}\frac{dl}{dd'}= \frac{N_{0}}{\sqrt{2 \pi}}\frac{1}{d}\frac{1}{\sigma_{l}}exp(-\frac{(ln(d)-\mu_{l})^2}{2 \sigma_{l^{2}}})\tag{3}
-$$
+with $l=ln(x)$, in this case x is either the radius or diameter, $\sigma$ and $\mu$ are the variance and mean of the particle number concentration distribution. If we want to express Equation 2 as function of diamter, consider that
+$$n(d) = \frac{dN(l)}{dl}\frac{dl}{dd'}= \frac{N_{0}}{\sqrt{2 \pi}}\frac{1}{d}\frac{1}{\sigma_{l}}exp(-\frac{(ln(d)-\mu_{l})^2}{2 \sigma_{l^{2}}})\tag{3}$$
 
-If we want to obtain the total surface area, we can obtain it from the second moment:
-$$
-S(d')=\pi/2\int_{} d'^2n(d')dd' = \pi/2\int_{} d'^{2}\frac{1}{d'}\frac{N_0}{ \sigma_l \sqrt{2\pi}}e^{-\frac{1}{2}(\frac{ln(d') - \mu_l}{\sigma_l})^{2}}dln(d')\tag{4}
-$$
+If we want to obtain the total surface area, we can obtain it from the second moment
+$$S(d')=\pi/2\int_{} d'^2n(d')dd' = \pi/2\int_{} d'^{2}\frac{1}{d'}\frac{N_0}{ \sigma_l \sqrt{2\pi}}e^{-\frac{1}{2}(\frac{ln(d') - \mu_l}{\sigma_l})^{2}}dln(d')\tag{4}$$
 making some simplifications
-$$
-S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{\sigma_l}\int_{} d'e^{-\frac{1}{2}(\frac{ln(d') - \mu_l}{\sigma_l})^{2}}dln(d')\tag{5}
-$$
+$$S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{\sigma_l}\int_{} d'e^{-\frac{1}{2}(\frac{ln(d') - \mu_l}{\sigma_l})^{2}}dln(d')\tag{5}$$
 
 Now, in order to obtain the limits of our integral we need to do, as it is said in the paper, "The  
 aerosol surface area concentration available for immersion freezing $s_{ae}$ is obtained by integrating the lognormal distribution from zero to the minimum diameter  dmin"
@@ -102,137 +87,63 @@ $d=0 \rightarrow,  ln(d) \rightarrow -\infty$ and $d=d_{min}\rightarrow  ln(d_{m
 
 **So here is the first difference with the paper**
 
-$$
-S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{\sigma_l}\int_{-\infty}^{ln(d_{min})} d'e^{-\frac{1}{2}(\frac{ln(d') - \mu_l}{\sigma_l})^{2}}dln(d')\tag{6}
-$$
+$$S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{\sigma_l}\int_{-\infty}^{ln(d_{min})} d'e^{-\frac{1}{2}(\frac{ln(d') - \mu_l}{\sigma_l})^{2}}dln(d')\tag{6}$$
 Now, we are going to focus in obtaining the variance and geometric mean for our lognormal distribution:
 *geometric mean* : the mean is a monotonic variable so the natural logarithm of the mean is the mean of the lognormal distribution
-$$
-\mu_{l}= ln(\mu_s)\tag{7}
-$$
+$$\mu_{l}= ln(\mu_s)\tag{7}$$
 
 *Variance:* It is defined according to:
 
-$$
-\sigma_{s}^{2}=\frac{\int_{0}^{\infty}\left(r-\mu_{s}\right)^{2} n(r)}{N_{0}} dr \tag{8}
-$$
+$$\sigma_{s}^{2}=\frac{\int_{0}^{\infty}\left(r-\mu_{s}\right)^{2} n(r)}{N_{0}} dr \tag{8}$$
 Obtaining it for the log-space:
 
-$$
-\begin{aligned}
-
-& \ln^2 \left(\sigma_{0}\right)=\frac{\int_{0}^{\infty}\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2} n(r) d r}{N_{0}} \\
-
-& \ln ^{2}\left(\sigma_{0}\right)= \int_{0}^{\infty}\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2} \frac{1}{\sqrt{2 \pi}} \frac{1}{\sigma_{1}} \frac{1}{r} e^{-\frac{-\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2}}{2 \sigma_{1}^{2}}} d r \\
-
-& =\frac{1}{\sigma_{l} \sqrt{2 \pi}} \int_{0}^{\infty} \frac{\left[\ln (r)-\ln \left(\mu_{s}\right)\right]^{2}}{r} e^{-\frac{\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2}}{2 \sigma_{1}^{2}}}dr
-
-\end{aligned}\tag{9}
-
-$$
-If we define:
-$$
-\begin{aligned}
-&  x = \frac{ln(r)-ln(\mu_s)}{\sqrt{2}\sigma_{l  }} \\
-&  \frac{dx}{dr} = \frac{1}{\sqrt{2}r\sigma_{l}}\rightarrow dr = \sqrt{2}\sigma_lrdx
-\end{aligned}\tag{10}
-$$
+$$\begin{aligned}& \ln^2 \left(\sigma_{0}\right)=\frac{\int_{0}^{\infty}\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2} n(r) d r}{N_{0}} \\& \ln ^{2}\left(\sigma_{0}\right)= \int_{0}^{\infty}\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2} \frac{1}{\sqrt{2 \pi}} \frac{1}{\sigma_{1}} \frac{1}{r} e^{-\frac{-\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2}}{2 \sigma_{1}^{2}}} d r \\ & =\frac{1}{\sigma_{l} \sqrt{2 \pi}} \int_{0}^{\infty} \frac{\left[\ln (r)-\ln \left(\mu_{s}\right)\right]^{2}}{r} e^{-\frac{\left(\ln (r)-\ln \left(\mu_{s}\right)\right)^{2}}{2 \sigma_{1}^{2}}}dr\end{aligned}\tag{9}$$
+If we define
+$$\begin{aligned}&  x = \frac{ln(r)-ln(\mu_s)}{\sqrt{2}\sigma_{l  }} \\& \frac{dx} {dr} = \frac{1}{\sqrt{2}r\sigma_{l}}\rightarrow dr = \sqrt{2}\sigma_lrdx\end{aligned}\tag{10}$$
 Using Equation (10) in (9), and considering that $r=0 \rightarrow  x \rightarrow -\infty$ and $r\rightarrow \infty,  x\rightarrow \infty$
-$$
-\begin{aligned}
-\ln^2 \left(\sigma_{s}\right)=\frac{1}{\sqrt{\pi}}  \int_{-\infty}^{\infty}2\sigma_l^2x^2 e^{-x^{2}}dx\\
-
-\ln^2 \left(\sigma_{s}\right)=\frac{2\sigma_l^2}{\sqrt{\pi}}  \int_{-\infty}^{\infty}x^2 e^{-x^{2}}dx
-\end{aligned} \tag{11}
-$$
-that integral is equal to $\sqrt{\pi}/ 2$ . Finally, we obtain that:
-$$
-ln^2(\sigma_{s})=\sigma_l^2
-\tag{12}
-$$
+$$\begin{aligned}\ln^2 \left(\sigma_{s}\right)=\frac{1}{\sqrt{\pi}}  \int_{-\infty}^{\infty}2\sigma_l^2x^2 e^{-x^{2}}dx\\\ln^2 \left(\sigma_{s}\right)=\frac{2\sigma_l^2}{\sqrt{\pi}}  \int_{-\infty}^{\infty}x^2 e^{-x^{2}}dx\end{aligned} \tag{11}$$
+that integral is equal to $\sqrt{\pi}/ 2$ . Finally, we obtain that
+$$ln^2(\sigma_{s})=\sigma_l^2\tag{12}$$
 and we can conclude that the geometric standard deviation of the lognormal distribution is equal to the natural logarithm of the geometric standard deviation of the distribution
 
 **W**ith this new information we can rewrite our Equation (6) using Equation (7) and (12)
-$$
-S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{ln(\sigma_s)}\int_{-\infty}^{ln(d_{min})} d'exp(-\frac{1}{2}(\frac{ln(d') - ln(\mu_s)}{ln(\sigma_s)})^{2})dln(d')\tag{13}
-$$
+$$S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{ln(\sigma_s)}\int_{-\infty}^{ln(d_{min})} d'exp(-\frac{1}{2}(\frac{ln(d') - ln(\mu_s)}{ln(\sigma_s)})^{2})dln(d')\tag{13}$$
 Where the subindex $s$ in $\mu_s$ and $\sigma_s$ makes reference that this is a **Size** distribution.
-Let's consider that $d=e^{ln(d)}$ , we can rewrite the integral of Equation (13) as:
-
-$$
-\int_{-\infty}^{ln(d_{min})} e^{ln(d')}exp(-\frac{1}{2}(\frac{ln(d') - ln(\mu_s)}{ln(\sigma_s)})^{2})dln(d')\tag{14}
-$$
-Expanding the binomial:
-$$
-\int_{-\infty}^{ln(d_{min})} exp(-(\frac{ln^2(d')-2ln(d')ln(\mu_s) + ln^2(\mu_s)-2ln^2(\sigma_s)ln(d')}{2ln^2(\sigma_s)}))dln(d')\tag{15}
-$$
+Let's consider that $d=e^{ln(d)}$ , we can rewrite the integral of Equation (13) as
+$$\int_{-\infty}^{ln(d_{min})} e^{ln(d')}exp(-\frac{1}{2}(\frac{ln(d') -ln(\mu_s)}{ln(\sigma_s)})^{2})dln(d')\tag{14}$$
+Expanding the binomial
+$$\int_{-\infty}^{ln(d_{min})} exp(-(\frac{ln^2(d')-2ln(d')ln(\mu_s) + ln^2(\mu_s)-2ln^2(\sigma_s)ln(d')}{2ln^2(\sigma_s)}))dln(d')\tag{15}$$
 
 We can rearrange terms that share $ln(d')$ 
-$$
-\int_{-\infty}^{ln(d_{min})} exp(-(\frac{ln^2(d')-2ln(d')(ln(\mu_s)+ ln^2(\sigma_s)) + ln^2(\mu_s)}{2ln^2(\sigma_s)}))dln(d')\tag{15}
-$$
+$$\int_{-\infty}^{ln(d_{min})} exp(-(\frac{ln^2(d')-2ln(d')(ln(\mu_s)+ln^2(\sigma_s)) + ln^2(\mu_s)}{2ln^2(\sigma_s)}))dln(d')\tag{15}$$
 
-$$
-\begin{aligned}
+$$\begin{aligned}& \text { adding and substracting: }\left(ln(\mu_{s})+\ln ^{2}(\sigma_s)\right)^{2}\end{aligned}$$
 
-& \text { adding and substracting: }\left(ln(\mu_{s})+\ln ^{2}(\sigma_s)\right)^{2}
-
-\end{aligned}
-$$
-
-Writing down only the therm of the exponential we have:
-$$
-\begin{aligned}
-
-&-(\frac{{\color{Blue} ln^2(d')-2ln(d')(ln(\mu_s)+ ln^2(\sigma_s))} + ln^2(\mu_s)+{\color{Blue} (ln(\mu_s)+ln^2(\sigma_s))^2}-{\color{green} (ln(\mu_s)+ln^2(\sigma_s))^2}}{2ln^2(\sigma_s)})dln(d')
-
-\end{aligned} \tag{16}
-$$
+Writing down only the therm of the exponential we have
+$$\begin{aligned}&-(\frac{{\color{Blue} ln^2(d')-2ln(d')(ln(\mu_s)+ ln^2(\sigma_s))} + ln^2(\mu_s)+{\color{Blue} (ln(\mu_s)+ln^2(\sigma_s))^2}-{\color{green} (ln(\mu_s)+ln^2(\sigma_s))^2}}{2ln^2(\sigma_s)})dln(d')\end{aligned} \tag{16}$$
 Where the part highlited in blue is a binomial of the form $(a-b)^2$ with $a=ln^2(d')$ and $b=(ln(\mu_s)+ln^2(\sigma_s))$ . Making this change and expanding the term in green we obtain
-$$
--(\frac{[ln(d')- (ln(\mu_s)+ln^2(\sigma_s))]^2{\color{Blue} -2ln(\mu_s)ln^2(\sigma_s)-ln^4(\sigma_s)}}{2ln^{2}(\sigma_s)})dln(d')\tag{17}
-$$
+$$-(\frac{[ln(d')- (ln(\mu_s)+ln^2(\sigma_s))]^2{\color{Blue}-2ln(\mu_s)ln^2(\sigma_s)-ln^4(\sigma_s)}}{2ln^{2}(\sigma_s)})dln(d')\tag{17}$$
 We can break this fraction into two parts: the black part depending on $d'$ and the blue part which does not depend on $d'$ 
-$$
-e^\frac{2ln(\mu_s)+ln^2(\sigma_s)}{2}\int_{-\infty}^{ln(d_{min})} e^-{\frac{[ln(d')- (ln(\mu_s)+ln^2(\sigma_s))]^2}{2ln^2(\sigma_s)}}dln(d')
-\tag{18}
-$$
+$$e^\frac{2ln(\mu_s)+ln^2(\sigma_s)}{2}\int_{-\infty}^{ln(d_{min})} e^-{\frac{[ln(d')- (ln(\mu_s)+ln^2(\sigma_s))]^2}{2ln^2(\sigma_s)}}dln(d')
+\tag{18}$$
 Considering the exponential part of the integral we can compare it with a normal distribution
-$$
-e^-\frac{(ln(x)-ln(\mu))^2}{2ln^2(\sigma)} = e^-{\frac{[ln(d')- (ln(\mu_s)+ln^2(\sigma_s))]^2}{2ln^2(\sigma_s)}} \tag{19}
-$$
+$$e^-\frac{(ln(x)-ln(\mu))^2}{2ln^2(\sigma)} = e^-{\frac{[ln(d')- (ln(\mu_s)+ln^2(\sigma_s))]^2}{2ln^2(\sigma_s)}} \tag{19}$$
 comparing term by term
 
-$$
-\begin{aligned}
-ln(x) = ln(d') \\
-ln(\mu_{sa}) = ln(\mu_s) + ln^2(\sigma_s)\\
-ln^2(\sigma_{sa}) = ln^2(\sigma_s)
-\end{aligned} \tag{20}
-$$
-What the set of equations in 20 says is that the geometric standard deviation for the size distribution and surface area is the same but the geometric mean is different. Using Equations (20), in (19) and writing  the whole expression for surface area density, we obtain:
+$$\begin{aligned}ln(x) = ln(d') \\ln(\mu_{sa}) = ln(\mu_s) + ln^2(\sigma_s)\\ln^2(\sigma_{sa}) = ln^2(\sigma_s)\end{aligned} \tag{20}$$
+What the set of equations in 20 says is that the geometric standard deviation for the size distribution and surface area is the same but the geometric mean is different. Using Equations (20), in (19) and writing  the whole expression for surface area density, we obtain
 
-$$
-S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{ln(\sigma_s)}e^\frac{2ln(\mu_s)+ln^2(\sigma_s)}{2}\int_{-\infty}^{ln(d_{min})} e^-{\frac{[ln(d')- ln(\mu_{sa})]^2}{2ln^2(\sigma_s)}}dln(d')\tag{21}
-$$
-If we call $S_0$ the constant before the integral:
-$$
-\boxed{S(d')=\frac{S_0}{ln(\sigma_s)}\int_{-\infty}^{ln(d_{min})} e^-{\frac{[ln(d')- ln(\mu_{sa})]^2}{2ln^2(\sigma_s)}}dln(d')}\tag{22}
-$$
-With $S_0$ being:
-$$
-S_0 = \frac{\sqrt{2\pi}}{4}N_0e^{\frac{2ln(\mu_s)+ln^2(\sigma_s)}{2}}
-$$
-Let's now consider the equation provided by the paper:
-$$
-s_{ae}= \frac{1}{\sqrt{2\pi}}\int_{log(d_{min})}^\infty dlogd\frac{S_{ae,0}}{log\sigma_{g,s}}exp[-\frac{(logd-logd_{m,s})^2}{2log^2\sigma_{g,s}}] \tag{23}
-$$
-Reorganizing the terms in a similar way to Equation (22) and moving the constant before the integral inside $S_0$ (here log means natural logarithm) we obtain:
+$$S(d')=\frac{\sqrt{2\pi}}{4}\frac{N_0}{ln(\sigma_s)}e^\frac{2ln(\mu_s)+ln^2(\sigma_s)}{2}\int_{-\infty}^{ln(d_{min})} e^-{\frac{[ln(d')- ln(\mu_{sa})]^2}{2ln^2(\sigma_s)}}dln(d')\tag{21}$$
+If we call $S_0$ the constant before the integral
+$$\boxed{S(d')=\frac{S_0}{ln(\sigma_s)}\int_{-\infty}^{ln(d_{min})} e^-{\frac{[ln(d')- ln(\mu_{sa})]^2}{2ln^2(\sigma_s)}}dln(d')}\tag{22}$$
+With $S_0$ being
+$$S_0 = \frac{\sqrt{2\pi}}{4}N_0e^{\frac{2ln(\mu_s)+ln^2(\sigma_s)}{2}}$$
+Let's now consider the equation provided by the paper
+$$s_{ae}= \frac{1}{\sqrt{2\pi}}\int_{log(d_{min})}^\infty dlogd\frac{S_{ae,0}}{log\sigma_{g,s}}exp[-\frac{(logd-logd_{m,s})^2}{2log^2\sigma_{g,s}}] \tag{23}$$
+Reorganizing the terms in a similar way to Equation (22) and moving the constant before the integral inside $S_0$ (here log means natural logarithm) we obtain
 
-$$
-s_{ae}(d)= \frac{S_{ae,0}}{log\sigma_{g,s}}\int_{log(d_{min})}^\infty e^{- \frac{[log(d)-log(d_{m,s})]^2}{2log^2\sigma_{g,s}}}dlogd \tag{24}
-$$
-Where, according to the paper:
+$$s_{ae}(d)= \frac{S_{ae,0}}{log\sigma_{g,s}}\int_{log(d_{min})}^\infty e^{- \frac{[log(d)-log(d_{m,s})]^2}{2log^2\sigma_{g,s}}}dlogd \tag{24}$$
+Where, according to the paper
 >"where $s_{ae,0}$ is the total aerosol surface area concentration  obtained from the fit to the measured size distribution  and $d_{m,s}$ and $\sigma_{g,s}$ the appropriate median diameter and  geometric standard deviation, respectively."
 
 ==Observation== We can see that both equations ( 22 and 24) are almost identical with the difference of the integration limits 
@@ -244,49 +155,19 @@ $d \rightarrow \infty, ln(d) \rightarrow \infty$ and $d = d_{min}, ln(d)=ln(d_{m
 So now, we need to find the amount of particles that activated to CNN ( #CNN), $f_d$. 
 Considering the fraction of **nonactivated** particles as:
 $1-f_d$ , and with the assumption that large particles activate first, we can consider the nonactivated fraction as the small particles: $d=0, ln(d=0) \rightarrow -\infty$ and $d = d_{min} \rightarrow ln(d_{min})$
-$$
-1 - f_d = \frac{1}{\sqrt{2 \pi}}\frac{1}{ln(\sigma_s)}\int_{- \infty}^{ln(d_{min})}exp(-\frac{1}{2}(\frac{ln(d') - ln(\mu_s)}{ln(\sigma_s)})^{2})dln(d') \tag{25}
-$$
+$$1 - f_d = \frac{1}{\sqrt{2 \pi}}\frac{1}{ln(\sigma_s)}\int_{- \infty}^{ln(d_{min})}exp(-\frac{1}{2}(\frac{ln(d') - ln(\mu_s)}{ln(\sigma_s)})^{2})dln(d') \tag{25}$$
 Focusing on the integral and defining $x=(\frac{ln(|d'|) - ln(\mu_s)}{ln(\sigma_s)})$ , $dln(d') = ln(\sigma_s)dx$ 
 **Note** the addition of absolute value doesn't change the result given that the diameter can only have positive values
-$$
-\begin{aligned}
-& 1 - f_d = \frac{1}{\sqrt{2 \pi}}\frac{1}{ln(\sigma_s)}\int_{- \infty}^{x_{min}}exp(-\frac{1}{2}x^{2})ln(\sigma_s)dx \\
-& 1 - f_d = \frac{1}{\sqrt{2 \pi}}\int_{- \infty}^{x_{min}}exp(-\frac{1}{2}x^{2})dx
-\end{aligned}\tag{26}
-$$
-The integral can be solved in the standard way, extending the integration to an additional dimension and the performing the integral in polar coordinates:
-$$
-\begin{aligned}
-
-& (1 - f_d )^2= \frac{2\pi}{\sqrt{2 \pi}}\int_{0}^{r_{min}}rexp(-\frac{1}{2}r^{2})dr \\
-& (1 - f_d )^2 = \frac{\pi}{\sqrt{2 \pi}}\int_{0}^{r_{min}}exp(-\frac{1}{2}r^{2})dr^2 \\
-& (1 - f_d )^2 = \frac{\pi}{\sqrt{2 \pi}}[-\frac{1}{a}e^{-ar^2}]|_{0}^{r_{min}} \\
-& (1 - f_d )^2 =-\frac{2\pi}{\sqrt{2 \pi}}[e^{-\frac{1}{2}r^2_{min}}-1] \\
-& (1 - f_d )^2 = -\sqrt{2\pi}[e^{-\frac{1}{2}r^2_{min}}-1]
-\end{aligned}\tag{27}
-$$
+$$\begin{aligned}& 1 - f_d = \frac{1}{\sqrt{2 \pi}}\frac{1}{ln(\sigma_s)}\int_{- \infty}^{x_{min}}exp(-\frac{1}{2}x^{2})ln(\sigma_s)dx \\& 1 - f_d = \frac{1}{\sqrt{2 \pi}}\int_{- \infty}^{x_{min}}exp(-\frac{1}{2}x^{2})dx\end{aligned}\tag{26}$$
+The integral can be solved in the standard way, extending the integration to an additional dimension and the performing the integral in polar coordinates
+$$\begin{aligned}& (1 - f_d )^2= \frac{2\pi}{\sqrt{2 \pi}}\int_{0}^{r_{min}}rexp(-\frac{1}{2}r^{2})dr \\& (1 - f_d )^2 = \frac{\pi}{\sqrt{2 \pi}}\int_{0}^{r_{min}}exp(-\frac{1}{2}r^{2})dr^2 \\& (1 - f_d )^2 = \frac{\pi}{\sqrt{2 \pi}}[-\frac{1}{a}e^{-ar^2}]|_{0}^{r_{min}} \\& (1 - f_d )^2 =-\frac{2\pi}{\sqrt{2 \pi}}[e^{-\frac{1}{2}r^2_{min}}-1] \\& (1 - f_d )^2 = -\sqrt{2\pi}[e^{-\frac{1}{2}r^2_{min}}-1]\end{aligned}\tag{27}$$
 If the fraction of activated particles is know, we can obtain $x_{min}$
-**An alternative, may be better** is using the error function:
-$$
-\begin{aligned}
-
-& 1 - f_d = \frac{1}{\sqrt{2 \pi}}\int_{- \infty}^{x_{min}}exp(-\frac{1}{2}x^{2})dx \\
-& 1 - f_d = \frac{1}{2}(1 + erf(\frac{x_{min}}{\sqrt{2}})) \\
-& 1 - f_d = \frac{1}{2}erfc(-\frac{x_{min}}{\sqrt{2}})
-\end{aligned}\tag{28}
-$$
-Solving for $x_{min}$:
-$$
--\sqrt{2}ercf^{-1}(2(1-f_d)) = x_{min} \tag{29}
-$$
+**An alternative, may be better** is using the error function
+$$\begin{aligned}& 1 - f_d = \frac{1}{\sqrt{2 \pi}}\int_{- \infty}^{x_{min}}exp(-\frac{1}{2}x^{2})dx \\& 1 - f_d = \frac{1}{2}(1 + erf(\frac{x_{min}}{\sqrt{2}})) \\& 1 - f_d = \frac{1}{2}erfc(-\frac{x_{min}}{\sqrt{2}})\end{aligned}\tag{28}$$
+Solving for $x_{min}$
+$$-\sqrt{2}ercf^{-1}(2(1-f_d)) = x_{min} \tag{29}$$
 With Equation (29) we can obtain the minimum diameter 
-$$
-\begin{aligned}
-& x_{min}=(\frac{ln(|d'_{min}|) - ln(\mu_s)}{ln(\sigma_s)}) \\
-
-\end{aligned}
-$$
+$$\begin{aligned}& x_{min}=(\frac{ln(|d'_{min}|) - ln(\mu_s)}{ln(\sigma_s)}) \\\end{aligned}$$
 $$
 \begin{aligned}
 & x_{m i n} = \frac{\ln \left( d_{m \ln }^{\prime}\right)-\ln \left(\mu_s\right)}{\ln \left(\sigma_s\right)} \\
@@ -296,16 +177,14 @@ $$
 $$
 With Equation 30 it is possible to obtain the minimum diameter at which CCN ( #CCN) happened.
 **In an analogous way we can obtain the surface area concentration available for immersion freezing**
-$$
-\begin{aligned}
+$$\begin{aligned}
 & 1=f_F+f_{u n} \\
 & 1-f_F=f_{u n} \\
 & 1-f_F=\frac{1}{2} \operatorname{erfc}\left(-\frac{x_{\text {min }}}{\sqrt{2}}\right) \\
 & f_F=1-\frac{1}{2} e r fc\left(\frac{-x_{\text {min }}}{\sqrt{2}}\right) \\
 & \frac{S_{a e}}{S_{a e, 0}}=f_F \\
 & \boxed{S_{a e}=S_{a e, 0}[1-\frac{1}{2} e r fc\left(\frac{-x_{\text {min }}}{\sqrt{2}}\right)]}
-\end{aligned} \tag{31}
-$$
+\end{aligned} \tag{31}$$
 Where $f_F$ and $f_{un}$ are the activated and nonactivated frozen fraction, respectively
 
 **Conclusion:**
